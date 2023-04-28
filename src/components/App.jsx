@@ -1,15 +1,17 @@
 import Profile from './profile/profile';
+import Statistics from './statistics/statistics';
 
 import user from '../data/user.json';
+import data from '../data/data.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        // height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
-        // alignItems: 'center',
+        alignItems: 'center',
         padding: 50,
         fontSize: 20,
         color: '#010101',
@@ -22,6 +24,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
