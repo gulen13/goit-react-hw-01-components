@@ -1,0 +1,19 @@
+.thead {
+  background-color: aqua;
+}
+
+.table {
+  border: 1px solid #ccc;
+  border-spacing: 3px;
+  table-layout: fixed;
+  width:450px;
+}
+.tr {
+  border: 1px solid #ccc;
+}
+.td, .th {
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  height: 30px;
+  padding: 10px;
+}
